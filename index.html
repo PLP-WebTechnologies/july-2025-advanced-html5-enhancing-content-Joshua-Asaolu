@@ -7,25 +7,29 @@
 </head>
 <body>
 
+    <!-- Header Section -->
     <header>
-        <h1>My Profile page</h1>
+        <h1>My Profile Page</h1>
         <nav>
-            <a href="profile">Profile</a> |
-            <a href="services">Services</a> |
-            <a href="register">Register</a>
+            <a href="profile.html">Profile</a> |
+            <a href="services.html">Services</a> |
+            <a href="register.html">Register</a>
         </nav>
     </header>   
 
+    <!-- Profile Section -->
     <section>
         <h2>Profile</h2>
-        <p>I am a self-motivated IT professional with a degree in Chemistry from the University of Lagos
-and a keen interest in Web Development, Proficient in writing CSS, HTML, JavaScript, and developing mobile responsive web applications. I possess the ability to write clean
-and efficient code, collaborate with others as well as work independently to achieve goals
-accurately and promptly.</p>
-
-<img src="Images/profile.jpg" alt="profile picture" width="30%" height="50%">
+        <p>
+            I am a self-motivated IT professional with a degree in Chemistry from the University of Lagos
+            and a keen interest in Web Development. Proficient in writing CSS, HTML, JavaScript, and developing 
+            mobile responsive web applications. I possess the ability to write clean and efficient code, 
+            collaborate with others, as well as work independently to achieve goals accurately and promptly.
+        </p>
+        <img src="Images/profile.jpg" alt="profile picture" width="30%" height="50%">
     </section>
    
+    <!-- Services Section -->
     <section>
         <h2>Our Services</h2>
         <ul>
@@ -35,29 +39,85 @@ accurately and promptly.</p>
         </ul>
     </section>
 
-    <form> 
-    <fieldset>
-        <legend>Register Here</legend>
-        <form action="/location" method="GET/POST">
-        <label for="name">Name:</label>
-        <input type="text" id="name">
-        <br/><br/>
-        <label for="email">Email:</label>
-        <input type="email">
-        <br/><br/>
-        <label for="password">Password:</label>
-        <input type="password">
-        <br/><br/>
-        <button type="submit">Submit</button>
-    </fieldset>
-    </form>
+    <!-- Embedded Video Section -->
+    <section>
+        <h2>Christian Music Video</h2>
+        <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/eUNFNSf4fVw?si=vY9PF1zJ2n2VgzGo" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen>
+        </iframe>
+    </section>
+
+    <!-- Registration Form -->
+    <section>
+        <h2>Register</h2>
+        <form action="/register" method="POST"> 
+            <fieldset>
+                <legend>Register Here</legend>
+
+                <label for="names">Name:</label><br>
+                <input type="text" id="names" name="names"><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br><br>
+
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password"><br><br>
+
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+    </section>
   
+    <!-- Table Section -->
+    <section>
+        <h2>Table Sets</h2>
+        <table border="1" cellpadding="10" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Phone</th>
+                    <th>Gender</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Joshua</td>
+                    <td>0908765683</td>
+                    <td>Male</td>
+                </tr>
+                <tr>
+                    <td>Gbemiga</td>
+                    <td>0802847334</td>
+                    <td>Male</td>
+                </tr>
+                <tr>
+                    <td>James</td>
+                    <td>0708765683</td>
+                    <td>Male</td>
+                </tr>
+                <tr>
+                    <td>Gbemi</td>
+                    <td>0702847334</td>
+                    <td>Female</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    
+    <!-- Footer Section -->
     <footer>
         <p>&copy; 2025 Web Developer. All Rights Reserved</p>
-         <p>Contact Us: <a href="mailto:support@webdeveloper.com" >support@webdeveloper.com</a></p>
-         <a id="termstxt" href="/terms-of-service">Terms of Service</a>
-         <a href="https://www.facebook.com/" target="_blank">Facebook</a>
-         <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+        <p>Contact Us: <a href="mailto:support@webdeveloper.com">support@webdeveloper.com</a></p>
+        <p>
+            <a id="termstxt" href="/terms-of-service">Terms of Service</a> | 
+            <a href="https://www.facebook.com/" target="_blank">Facebook</a> | 
+            <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+        </p>
     </footer>
    
 </body>
